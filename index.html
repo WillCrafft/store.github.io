@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wille Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay loop muted id="background-video">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <!-- Tampilan 1: Home -->
+    <section id="home" class="screen">
+        <img src="logo.png" alt="Wille Store Logo" id="logo">
+        <button class="btn" onclick="navigateTo('kategori')">Mulai Belanja</button>
+        <div class="links">
+            <a href="https://youtube.com/@willcraft11?si=WTc9dZo_Zvt2ztJF" target="_blank">YouTube</a> |
+            <a href="https://discord.gg/q9mGeDAZy8" target="_blank">Discord</a>
+        </div>
+    </section>
+
+    <!-- Tampilan 2: Kategori -->
+    <section id="kategori" class="screen hidden">
+        <h1>Pilih Kategori</h1>
+        <button class="btn" onclick="navigateTo('skin')">Skin Minecraft</button>
+        <button class="btn" onclick="navigateTo('render_minecraft')">Render Minecraft</button>
+        <button class="btn" onclick="navigateTo('render_ml')">Render Mobile Legends</button>
+        <button class="btn" onclick="navigateTo('render_ff')">Render Free Fire</button>
+        <button class="btn back" onclick="navigateTo('home')">⏪back</button>
+    </section>
+
+    <!-- Tampilan 3: Skin Minecraft -->
+    <section id="skin" class="screen hidden">
+        <h1>Skin Minecraft</h1>
+        <div class="slider">
+            <img src="skin1.png" alt="Skin 1">
+            <img src="skin2.png" alt="Skin 2">
+            <img src="skin3.png" alt="Skin 3">
+        </div>
+       <a href="https://wa.me/6282287752416?text=Saya ingin pesan skin Minecraft" class="btn">Pesan Sekarang</a>
+        <button class="btn back" onclick="navigateTo('kategori')">⏪back</button>
+    </section>
+
+    <!-- Tampilan 3: Render Minecraft -->
+    <section id="render_minecraft" class="screen hidden">
+        <h1>Render Minecraft</h1>
+        <div class="slider">
+            <img src="render1.png" alt="Render 1">
+            <img src="render2.png" alt="Render 2">
+            <img src="render3.png" alt="Render 3">
+        </div>
+        <a href="https://wa.me/6282287752416?text=Saya ingin pesan render 3d minecraft" class="btn">Pesan Sekarang</a>
+
+        <button class="btn back" onclick="navigateTo('kategori')">⏪back</button>
+    </section>
+
+    <!-- Tampilan 3: Render Mobile Legends -->
+    <section id="render_ml" class="screen hidden">
+        <h1>Render Mobile Legends</h1>
+        <div class="slider">
+            <img src="ml1.png" alt="ML Render 1">
+            <img src="ml2.png" alt="ML Render 2">
+        </div>
+        <a href="https://wa.me/6282287752416?text=Saya ingin pesan render 3d mobile legends" class="btn">Pesan Sekarang</a>
+        <button class="btn back" onclick="navigateTo('kategori')">⏪back</button>
+    </section>
+
+    <!-- Tampilan 3: Render Free Fire -->
+    <section id="render_ff" class="screen hidden">
+        <h1>Render Free Fire</h1>
+        <div class="slider">
+            <img src="ff1.png" alt="FF Render 1">
+            <img src="ff2.png" alt="FF Render 2">
+        </div>
+        <a href="https://wa.me/6282287752416?text=Saya ingin pesan render 3d free fire" class="btn">Pesan Sekarang</a>
+        <button class="btn back" onclick="navigateTo('kategori')">⏪back</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
